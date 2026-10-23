@@ -38,3 +38,16 @@
 .testimonial-verified{display:flex;align-items:center;gap:4px;padding:5px 7px;background:#e7efdf;border-radius:20px;color:#486d4f;font-size:8px;font-weight:700;white-space:nowrap}
 @media(max-width:820px){.testimonial-inner{padding-left:5%;padding-right:5%}.testimonials-grid{gap:10px}.testimonial-card{padding:20px 17px}.testimonial-card blockquote{font-size:16px}.testimonial-section-heading>p{max-width:260px}}
 @media(max-width:580px){.testimonial-section{padding:65px 0}.testimonial-inner{padding:0 20px}.testimonial-section-heading{display:block;margin-bottom:24px}.testimonial-section-heading h2{font-size:39px;letter-spacing:-1.8px;max-width:350px}.testimonial-section-heading>p{margin-top:14px;font-size:11px}.testimonials-grid{grid-template-columns:1fr;gap:11px}.testimonial-card{padding:23px 21px 19px}.testimonial-card blockquote{font-size:19px}.testimonial-avatar-photo{width:40px;height:40px}}
+
+/* About section photography: a distinct, editorial workspace image instead of a repeated vector illustration */
+.about-photo-layout{min-height:480px;display:flex;align-items:flex-start}
+.about-workspace-photo{position:absolute;left:4%;top:0;width:87%;height:405px;overflow:hidden;border-radius:5px 105px 5px 5px;background:#dce5d7}
+.about-workspace-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.workspace-photo-shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(8,35,29,.74) 100%)}
+.workspace-photo-caption{position:absolute;left:25px;right:20px;bottom:25px;color:#fff;display:flex;flex-direction:column;gap:8px}
+.workspace-photo-caption span{font-size:8px;letter-spacing:1.7px;font-weight:700;color:#e0e9d9}
+.workspace-photo-caption strong{font-family:'DM Serif Display',Georgia,serif;font-size:32px;font-weight:400;letter-spacing:-.5px}
+.workspace-stat{z-index:2;bottom:26px;left:0}
+.about-photo-layout .art-index{bottom:4px;right:0}
+@media(max-width:820px){.about-photo-layout{min-height:420px}.about-workspace-photo{height:355px;width:89%;left:3%}}
+@media(max-width:580px){.about-photo-layout{min-height:390px}.about-workspace-photo{height:330px;width:91%;left:3%;border-top-right-radius:85px}.workspace-photo-caption{left:18px;bottom:20px}.workspace-photo-caption strong{font-size:28px}.workspace-stat{bottom:17px}.about-photo-layout .art-index{font-size:6px;max-width:42%;text-align:right}}
